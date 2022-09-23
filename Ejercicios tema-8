@@ -1,0 +1,36 @@
+public class encapsulacion {
+    public static void main(String[] args) {
+        Persona persona1 = new Persona();
+        persona1.setNombre ("Paca Garte");
+        persona1.setEdad(102);
+        persona1.setTelefonoMovil("68200930224");
+
+        System.out.println(persona1.getNombre());
+        System.out.println(persona1.getEdad());
+        System.out.println(persona1.getTelefonoMovil());
+    }
+}
+class Persona {
+    private String nombre;
+    private int edad;
+    private String telefonomovil;
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    public void setEdad (int edad){
+        this.edad = edad;
+    }
+    public int getEdad (){
+        return this.edad;
+    }
+    public void setTelefonoMovil(String telefonomovil){
+        this.telefonomovil = telefonomovil;
+    }
+    public String getTelefonoMovil(){
+        return this.telefonomovil;
+    }
+}
